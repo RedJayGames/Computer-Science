@@ -1,3 +1,2 @@
 INDEX VERSION 1.126+Z:\Computer Science\.metadata\.plugins\org.eclipse.jdt.core
-4292573272.index
 3430291386.index

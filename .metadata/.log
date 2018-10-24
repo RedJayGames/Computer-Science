@@ -1360,3 +1360,120 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:02.104
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:02.301
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:02.557
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:02.813
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:03.006
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:03.212
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:03.412
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:03.653
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.writeNext(InputStreamMonitor.java:147)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:124)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.debug.core 4 125 2018-10-24 11:40:05.132
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: The pipe is being closed
+	at java.io.FileOutputStream.writeBytes(Native Method)
+	at java.io.FileOutputStream.write(Unknown Source)
+	at java.io.BufferedOutputStream.flushBuffer(Unknown Source)
+	at java.io.BufferedOutputStream.flush(Unknown Source)
+	at java.io.FilterOutputStream.close(Unknown Source)
+	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:128)
+	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:99)
+	at java.lang.Thread.run(Unknown Source)
