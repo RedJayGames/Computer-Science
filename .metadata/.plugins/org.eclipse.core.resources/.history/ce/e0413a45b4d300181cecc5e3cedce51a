@@ -1,0 +1,14 @@
+import java.awt.Graphics;
+
+
+public class Drawing {
+
+	public static void main(String[] args) {
+		
+	}
+	public class Foo extends Canvas{
+		public void paint(Graphics g){
+			g.drawRect(2, 3, 10, 15);
+		}
+	}
+}
