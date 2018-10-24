@@ -51,7 +51,7 @@ public class Roulette {
 		System.out.println("Average number of spins: " + spin);
 		System.out.println("Average money left: " + finalResult/NUM_SIMS);
 		System.out.println("Average percent gain: " + percent.format(((double)(finalResult/NUM_SIMS-STARTING_MONEY)/STARTING_MONEY)));
-//test
+
 	}
 
 }
