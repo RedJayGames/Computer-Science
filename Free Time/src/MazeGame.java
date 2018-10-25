@@ -8,7 +8,7 @@ public class MazeGame extends Applet {
 
 	public void paint(Graphics g){
 		int x = 5,y = 5;
-		boolean win = false;
+		boolean win = false, wall = false;
 		int wallsX[], wallsY[], pathX[], pathY[], wallsX1[] = null, wallsY1[] = null, pathX1[] = null, pathY1[] = null;
 		wallsX = new int[1444];
 		wallsY = new int[1444];
@@ -28,7 +28,7 @@ public class MazeGame extends Applet {
 		g.fillRect(5, 195, 200, 10);
 
 		//creates path
-		for(int i = 0, determine;!(x == 185 && y == 190) && !(x == 190 && y == 185);i++){
+		for(int i = 0, determine;!(x == 190 && y == 190);i++){
 			determine = rand.nextInt(14);
 			if(determine < 3 && determine >= 0 && x >= 10){
 				x-=5;
@@ -75,9 +75,20 @@ public class MazeGame extends Applet {
 			}
 		}
 		
+		//re-color path
 		for(int i = 0;i < pathX1.length;i++) {
 			g.setColor(Color.white);
 			g.fillRect(pathX1[i], pathY1[i], 5, 5);
+		}
+		
+		//remove walls from path
+		for(int i = 0;i < pathX1.length && i < wallsX1.length; i++){
+			for(int j = 0; j < pathX1.length && j < wallsX1.length; j++){
+				if(pathX1[i] == wallsX1[j] && pathY1[i] == wallsY1[j]){
+					wallsX1[j] = 0;
+					wallsY1[j] = 0;
+				}
+			}
 		}
 		
 		//reset variables
@@ -96,6 +107,7 @@ public class MazeGame extends Applet {
 		
 		//allows player movement
 		for(String input;win == false;){
+			wall = false;
 			//sets player location and changes after 
 			g.setColor(Color.green);
 			g.fillOval(x, y, 5, 5);
@@ -107,42 +119,46 @@ public class MazeGame extends Applet {
 			if(input.equals("w") && y > 5){
 				for(int i = 0; i < wallsX1.length; i++) {
 					if(wallsX1[i] == x && wallsY1[i] == y - 5) {
+						wall = true;
 						break;
-					}else {
-						g.fillRect(x, y, 5, 5);
-						y-=5;
 					}
-					break;
+				}
+				if(wall == false){
+					g.fillRect(x,y,5,5);
+					y-=5;
 				}
 			}else if(input.equals("a") && x > 5){
 				for(int i = 0; i < wallsX1.length; i++) {
 					if(wallsX1[i] == x - 5 && wallsY1[i] == y) {
+						wall = true;
 						break;
-					}else {
-						g.fillRect(x, y, 5, 5);
-						x-=5;
 					}
-					break;
+				}
+				if(wall == false){
+					g.fillRect(x,y,5,5);
+					x-=5;
 				}
 			}else if(input.equals("s") && y < 190){
 				for(int i = 0; i < wallsX1.length; i++) {
 					if(wallsX1[i] == x && wallsY1[i] == y + 5) {
+						wall = true;
 						break;
-					}else {
-						g.fillRect(x, y, 5, 5);
-						y+=5;
 					}
-					break;
+				}
+				if(wall == false){
+					g.fillRect(x,y,5,5);
+					y+=5;
 				}
 			}else if(input.equals("d") && x < 190){
 				for(int i = 0; i < wallsX1.length; i++) {
 					if(wallsX1[i] == x + 5 && wallsY1[i] == y) {
+						wall = true;
 						break;
-					}else {
-						g.fillRect(x, y, 5, 5);
-						x+=5;
 					}
-					break;
+				}
+				if(wall == false){
+					g.fillRect(x,y,5,5);
+					x+=5;
 				}
 			}
 			if(x == 190 && y == 190) {
