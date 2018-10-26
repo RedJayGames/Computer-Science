@@ -56,10 +56,9 @@ public class MazeGame extends Applet {
 					g.setColor(Color.white);
 					g.fillRect(x, y, 5, 5);
 				}
-				System.out.println(i);
+
 				for(int count = 0; count <= i; count++){
 					if(pathX[count] == x && pathY[count] == y){
-						i--;
 						path = true;
 						break;
 					}
