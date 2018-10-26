@@ -14,8 +14,8 @@ public class MazeGame extends Applet {
 		wallsY = new int[1444];
 		pathX = new int[1444];
 		pathY = new int[1444];
-		
-		
+
+
 		setBackground (Color.white);
 
 		Random rand = new Random();
@@ -52,83 +52,72 @@ public class MazeGame extends Applet {
 
 			//reduces length of array
 			if((x == 185 && y == 190) || (x == 190 && y == 185)) {
-			pathX1 = Arrays.copyOf(pathX, i);
-			pathY1 = Arrays.copyOf(pathY, i);
+				pathX1 = Arrays.copyOf(pathX, i);
+				pathY1 = Arrays.copyOf(pathY, i);
 			}
 		}
-		
+
 		//creates walls in random locations
 		for(int wallx, wally, i = 0, count = 1000; count > 0; i++){
 			g.setColor(Color.black);
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 			g.fillRect(0, 0, 5, 200);
 			g.fillRect(0, 0, 200, 5);
 			g.fillRect(195, 5, 10, 200);
 			g.fillRect(5, 195, 200, 10);
+		}
 
-			//creates path
-			for(int i = 0, determine;!(x == 190 && y == 190);i++){
-				determine = rand.nextInt(14);
-				if(determine < 3 && determine >= 0 && x >= 10){
-					x-=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine < 6 && determine >= 3 && y >= 10){
-					y-=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine < 10 && determine >= 6 && x <= 185){
-					x+=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine >= 10 && y<=185){
-					y+=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}
-				pathX[i] = x;
-				pathY[i] = y;
+		//creates path
+		for(int i = 0, determine;!(x == 190 && y == 190);i++){
+			determine = rand.nextInt(14);
+			if(determine < 3 && determine >= 0 && x >= 10){
+				x-=5;
+				g.setColor(Color.white);
+				g.fillRect(x, y, 5, 5);
+			}else if(determine < 6 && determine >= 3 && y >= 10){
+				y-=5;
+				g.setColor(Color.white);
+				g.fillRect(x, y, 5, 5);
+			}else if(determine < 10 && determine >= 6 && x <= 185){
+				x+=5;
+				g.setColor(Color.white);
+				g.fillRect(x, y, 5, 5);
+			}else if(determine >= 10 && y<=185){
+				y+=5;
+				g.setColor(Color.white);
+				g.fillRect(x, y, 5, 5);
+			}
 
-				//reduces length of array
-				if((x == 185 && y == 190) || (x == 190 && y == 185)) {
-					pathX1 = Arrays.copyOf(pathX, i);
-					pathY1 = Arrays.copyOf(pathY, i);
-				}
-=======
-=======
->>>>>>> parent of c8ae410... Completed the Maze
-=======
->>>>>>> parent of c8ae410... Completed the Maze
+			pathX[i] = x;
+			pathY[i] = y;
+		}
+
+		for(int wallx,wally,count = 1000, i = 0; count > 0;i++){
+			//reduces length of array
+			if((x == 185 && y == 190) || (x == 190 && y == 185)) {
+				pathX1 = Arrays.copyOf(pathX, i);
+				pathY1 = Arrays.copyOf(pathY, i);
+			}
 			wallx = (rand.nextInt(38) + 1) * 5;
 			wally = (rand.nextInt(38) + 1) * 5;
 			g.fillRect(wallx, wally, 5, 5);
 			wallsX[i] = wallx;
 			wallsY[i] = wally;
-			
+
 			count--;
-			
+
 			//reduces length of array
 			if(count == 0) {
-			wallsX1 = Arrays.copyOf(wallsX, i);
-			wallsY1 = Arrays.copyOf(wallsY, i);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> parent of c8ae410... Completed the Maze
-=======
->>>>>>> parent of c8ae410... Completed the Maze
-=======
->>>>>>> parent of c8ae410... Completed the Maze
+				wallsX1 = Arrays.copyOf(wallsX, i);
+				wallsY1 = Arrays.copyOf(wallsY, i);
 			}
 		}
-		
+
 		//re-color path
 		for(int i = 0;i < pathX1.length;i++) {
 			g.setColor(Color.white);
 			g.fillRect(pathX1[i], pathY1[i], 5, 5);
 		}
-		
+
 		//remove walls from path
 		for(int i = 0;i < pathX1.length && i < wallsX1.length; i++){
 			for(int j = 0; j < pathX1.length && j < wallsX1.length; j++){
@@ -138,21 +127,21 @@ public class MazeGame extends Applet {
 				}
 			}
 		}
-		
+
 		//reset variables
 		x = 5;
 		y = 5;
-		
+
 		//ensures starting location
 		g.setColor(Color.white);
 		g.fillRect(5, 5, 5, 5);
 		g.fillRect(5, 10, 5, 5);
 		g.fillRect(10, 5, 5, 5);
-		
+
 		//shows exit to maze
 		g.setColor(Color.magenta);
 		g.fillRect(190, 190, 5, 5);
-		
+
 		//allows player movement
 		for(String input;win == false;){
 			wall = false;
