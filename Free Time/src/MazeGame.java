@@ -70,20 +70,20 @@ public class MazeGame extends Applet {
 
 			//creates path
 			for(int i = 0, determine;!(x == 190 && y == 190);i++){
-				determine = rand.nextInt(21);
-				if(determine < 5 && x >= 10){
+				determine = rand.nextInt(14);
+				if(determine < 3 && determine >= 0 && x >= 10){
 					x-=5;
 					g.setColor(Color.white);
 					g.fillRect(x, y, 5, 5);
-				}else if(determine < 10 && y >= 10){
+				}else if(determine < 6 && determine >= 3 && y >= 10){
 					y-=5;
 					g.setColor(Color.white);
 					g.fillRect(x, y, 5, 5);
-				}else if(determine < 16 && x <= 185){
+				}else if(determine < 10 && determine >= 6 && x <= 185){
 					x+=5;
 					g.setColor(Color.white);
 					g.fillRect(x, y, 5, 5);
-				}else if(determine >= 22 && y<=185){
+				}else if(determine >= 10 && y<=185){
 					y+=5;
 					g.setColor(Color.white);
 					g.fillRect(x, y, 5, 5);
