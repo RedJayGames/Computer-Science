@@ -2038,6 +2038,7 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 =======
 >>>>>>> parent of c8ae410... Completed the Maze
 >>>>>>> 850b401b6bd43526631b34a3bdd005ec13441a42
+<<<<<<< HEAD
 !SESSION 2018-10-26 11:17:57.713 -----------------------------------------------
 eclipse.buildId=4.3.0.M20130911-1000
 java.version=1.8.0_172
@@ -2246,3 +2247,5 @@ org.xml.sax.SAXParseException; lineNumber: 5; columnNumber: 2; The content of el
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1450)
 =======
 >>>>>>> parent of c8ae410... Completed the Maze
+=======
+>>>>>>> parent of 09196bf... just in case backup
