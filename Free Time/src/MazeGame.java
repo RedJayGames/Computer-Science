@@ -62,6 +62,7 @@ public class MazeGame extends Applet {
 			g.setColor(Color.black);
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			g.fillRect(0, 0, 5, 200);
 			g.fillRect(0, 0, 200, 5);
 			g.fillRect(195, 5, 10, 200);
@@ -98,6 +99,8 @@ public class MazeGame extends Applet {
 =======
 =======
 >>>>>>> parent of c8ae410... Completed the Maze
+=======
+>>>>>>> parent of c8ae410... Completed the Maze
 			wallx = (rand.nextInt(38) + 1) * 5;
 			wally = (rand.nextInt(38) + 1) * 5;
 			g.fillRect(wallx, wally, 5, 5);
@@ -111,6 +114,9 @@ public class MazeGame extends Applet {
 			wallsX1 = Arrays.copyOf(wallsX, i);
 			wallsY1 = Arrays.copyOf(wallsY, i);
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of c8ae410... Completed the Maze
+=======
 >>>>>>> parent of c8ae410... Completed the Maze
 =======
 >>>>>>> parent of c8ae410... Completed the Maze
