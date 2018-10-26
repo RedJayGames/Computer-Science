@@ -1572,6 +1572,8 @@ java.io.IOException: The pipe is being closed
 	at org.eclipse.debug.internal.core.InputStreamMonitor.write(InputStreamMonitor.java:129)
 	at org.eclipse.debug.internal.core.InputStreamMonitor$1.run(InputStreamMonitor.java:100)
 	at java.lang.Thread.run(Unknown Source)
+<<<<<<< HEAD
+=======
 
 !ENTRY org.eclipse.equinox.p2.discovery 4 0 2018-10-24 22:18:42.639
 !MESSAGE Unexpected error while verifying site availability: Unable to read repository at https://download.ctrlflow.com/connect/updates/discovery/stable/content.jar.
@@ -1629,6 +1631,7 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 26 more
+<<<<<<< HEAD
 !SESSION 2018-10-25 11:45:43.856 -----------------------------------------------
 eclipse.buildId=4.3.0.M20130911-1000
 java.version=1.8.0_172
@@ -2028,3 +2031,9 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+=======
+<<<<<<< HEAD
+>>>>>>> parent of c8ae410... Completed the Maze
+=======
+>>>>>>> parent of c8ae410... Completed the Maze
+>>>>>>> 850b401b6bd43526631b34a3bdd005ec13441a42
