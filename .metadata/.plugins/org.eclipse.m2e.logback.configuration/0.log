@@ -111,4 +111,3 @@ org.apache.lucene.index.IndexNotFoundException: no segments* file found in org.a
 2018-10-22 11:46:53,910 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
 2018-10-23 11:40:36,183 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
 2018-10-24 11:16:04,650 [main] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
-2018-10-24 20:44:19,381 [Worker-7] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
