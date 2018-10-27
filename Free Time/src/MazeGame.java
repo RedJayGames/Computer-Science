@@ -175,6 +175,7 @@ public class MazeGame extends Applet {
 			question = scan.next();
 			if(question.charAt(0) == 'n' || question.charAt(0) == 'N'){
 				again = false;
+<<<<<<< HEAD
 				System.out.println("You may now close the application.");
 			}else {
 				for(int i = 0; i < 1444; i++) {
@@ -187,6 +188,9 @@ public class MazeGame extends Applet {
 					wallsX1[i] = 0;
 					wallsY1[i] = 0;
 				}
+=======
+				System.out.println("You may now close te application.");
+>>>>>>> parent of 1f312fd... Everything Works Again
 			}
 		}
 		scan.close();
