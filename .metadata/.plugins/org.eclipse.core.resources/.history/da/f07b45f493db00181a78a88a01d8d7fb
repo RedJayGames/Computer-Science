@@ -1,0 +1,31 @@
+
+public class Dog {
+	
+	private String name;
+	private int age;
+	private int weight;
+	private String owner;
+	
+	public Dog (String n, int a , int w, String o){
+		name = n;
+		age = a;
+		weight = w;
+		owner = o;
+	}
+	
+	public void bark(){
+		if(weight > 50){
+			System.out.println("woof");
+		}else{
+			System.out.println("yep");
+		}
+	}
+	
+	public void changeOwner(String newOwner){
+		owner = newOwner;
+	}
+	
+	public String toString(){
+		return (name + "\t" + age + "\t" + weight+ "\t" + owner);
+	}
+}
