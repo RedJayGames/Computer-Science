@@ -21,24 +21,8 @@ public class Dog {
 		}
 	}
 	
-	public void setName(String newName){
-		name = newName;
-	}
-	
-	public void setAge(int newAge){
-		age = newAge;
-	}
-	
 	public void setOwner(String newOwner){
 		owner = newOwner;
-	}
-	
-	public String getName(){
-		return name;
-	}
-	
-	public int getAge(){
-		return age;
 	}
 	
 	public String getOwner(){

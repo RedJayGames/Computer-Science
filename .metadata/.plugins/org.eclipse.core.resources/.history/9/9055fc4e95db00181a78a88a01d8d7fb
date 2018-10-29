@@ -19,7 +19,7 @@ public class DogTest {
 		System.out.println(mysteryDog);
 		mysteryDog.setAge(8);
 		System.out.println(mysteryDog.getAge());
-		System.out.println("Happy birthday, " + mysteryDog.getName() + "!");
+		System.out.println("Happy birthday, " + mysteryDog.getName());
 	}
 
 }
