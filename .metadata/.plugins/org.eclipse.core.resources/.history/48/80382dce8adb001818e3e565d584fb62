@@ -157,9 +157,7 @@ public class MazeGame extends Applet {
 						g.fillRect(x,y,5,5);
 						x+=5;
 					}
-				}//else{
-					//System.out.println("Boonk!");
-				//}
+				}
 				if(x == 190 && y == 190) {
 					win = true;
 				}
