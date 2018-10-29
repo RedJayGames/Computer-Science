@@ -12,7 +12,7 @@ public class MazeGame extends Applet {
 
 		boolean again = true;
 		String question;
-
+		
 		System.out.println("Welcome to the Maze!\nYou can move using wasd, but please press \"enter\" after every input."+
 				"\nRemember, you control the green dot, and your goal is to move to the magenta tile.");
 
@@ -37,71 +37,46 @@ public class MazeGame extends Applet {
 			g.fillRect(5, 195, 200, 10);
 
 			//creates path
+			g.setColor(Color.white);
 			for(int i = 0, determine;!(x == 190 && y == 190);i++){
-				determine = rand.nextInt(42);
-				if(determine < 10 && x >= 10){
+				determine = rand.nextInt(14);
+				if(determine < 3 && determine >= 0 && x >= 10){
 					x-=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine < 20 && determine >= 3 && y >= 10){
+				}else if(determine < 6 && determine >= 3 && y >= 10){
 					y-=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine < 31 && determine >= 6 && x <= 185){
+				}else if(determine < 10 && determine >= 6 && x <= 185){
 					x+=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
-				}else if(determine < 43 && y<=185){
+				}else if(determine >= 10 && y<=185){
 					y+=5;
-					g.setColor(Color.white);
-					g.fillRect(x, y, 5, 5);
 				}
-				System.out.println(i);
-				for(int count = 0; count <= i; count++){
-					if(pathX[count] == x && pathY[count] == y){
-						i--;
-						path = true;
-						break;
-					}
-				}
-				if(path){
-					pathX[i] = x;
-					pathY[i] = y;
-					path = false;
-				}
+				g.fillRect(x, y, 5, 5);
+				pathX[i] = x;
+				pathY[i] = y;
 
 				//reduces length of array
-				if((x == 185 && y == 190) || (x == 190 && y == 185)) {
+				if(x == 190 && y == 190) {
 					pathX1 = Arrays.copyOf(pathX, i);
 					pathY1 = Arrays.copyOf(pathY, i);
 				}
 			}
 
 			//creates walls in random locations
-			for(int wallx, wally, i = 0, count = 1000; count > 0; i++){
+			for(int wallx, wally, i = 0, count = 1000; count > 0; i++, path = false){
 				g.setColor(Color.black);
 				wallx = (rand.nextInt(38) + 1) * 5;
 				wally = (rand.nextInt(38) + 1) * 5;
 				for(int j = 0; j < pathX1.length; j++){
-					if((pathX1[j] == wallx && pathY1[j] == wally) || (wallx == 190 && wally == 190)){
-						wallx = 0;
-						wally = 0;
-					}
-				}
-				g.fillRect(wallx, wally, 5, 5);
-				
-				for(int j = 0; j <= i; j++){
-					if(wallsX[j] == x && wallsY[j] == y){
-						wall = true;
+					if(pathX1[j] == wallx && pathY1[j] == wally){
+						path = true;
 						break;
 					}
 				}
-				if(wall){
+				
+				if(path == false) {
+					g.fillRect(wallx, wally, 5, 5);
 					wallsX[i] = wallx;
 					wallsY[i] = wally;
-					wall = false;
 				}
-
 				count--;
 
 				//reduces length of array
@@ -128,11 +103,12 @@ public class MazeGame extends Applet {
 			g.fillRect(190, 190, 5, 5);
 
 			//allows player movement
-			for(String input;win == false;wall = false){
+			for(String input;win == false;){
+				wall = false;
 				//sets player location and changes after 
 				g.setColor(Color.green);
 				g.fillOval(x, y, 5, 5);
-
+				
 				//places white square on previous space after determining new location
 				//prevents a trail of green circles
 				g.setColor(Color.white);
@@ -181,7 +157,9 @@ public class MazeGame extends Applet {
 						g.fillRect(x,y,5,5);
 						x+=5;
 					}
-				}
+				}//else{
+					//System.out.println("Boonk!");
+				//}
 				if(x == 190 && y == 190) {
 					win = true;
 				}
