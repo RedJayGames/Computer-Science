@@ -1,43 +1,6 @@
-<<<<<<< HEAD
 INDEX VERSION 1.131+C:\Users\Corbin Grosso\Documents\GitHub\Computer-Science\.metadata\.plugins\org.eclipse.jdt.core
-1622776731.index
-326805980.index
 728296283.index
-4289135590.index
-1518219961.index
-398058497.index
-14682029.index
-1870878615.index
-2773834657.index
-3854475047.index
-1988513050.index
-3523662158.index
-3886402465.index
-1084624933.index
 1455593261.index
-2915817496.index
-984225034.index
-2511617568.index
-=======
-INDEX VERSION 1.126+Z:\Computer Science\.metadata\.plugins\org.eclipse.jdt.core
-1914892012.index
-3612272032.index
-3197688239.index
-3751741110.index
-266233581.index
-811048030.index
-1574964630.index
-980904367.index
-3848528770.index
-2299224485.index
-47300866.index
-1957342768.index
-3744067877.index
-2129323544.index
-1207362490.index
-3678008132.index
-3036558207.index
-4243012665.index
->>>>>>> parent of baa8ca3... Updated Dog Project, Added Banking Project
 3430291386.index
-1459427292.index
+2915817496.index
+3523662158.index

@@ -2,8 +2,8 @@
 public class Burger {
 
 	public static void main(String[] args) {
-		boolean burgerTime = true;
-		while(burgerTime){
+		boolean run = true;
+		while(run){
 			System.out.println("burger");
 		}
 	}
