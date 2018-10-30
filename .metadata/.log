@@ -2715,6 +2715,7 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
 !SESSION 2018-10-30 11:00:52.730 -----------------------------------------------
 eclipse.buildId=4.3.0.M20130911-1000
 java.version=1.8.0_172
@@ -2788,3 +2789,5 @@ org.apache.lucene.index.IndexFormatTooOldException: Format version is not suppor
 !MESSAGE Problems occurred while trying to save the state of the workbench.
 !SUBENTRY 1 org.eclipse.core.resources 2 234 2018-10-30 11:03:22.571
 !MESSAGE The project description file (.project) for 'Chapter 4 (Banking)' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+=======
+>>>>>>> 9a5936d42d568eb12ca4612108ace8c138bab657
