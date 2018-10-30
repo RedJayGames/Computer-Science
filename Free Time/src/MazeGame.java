@@ -40,11 +40,11 @@ public class MazeGame extends Applet {
 			g.setColor(Color.white);
 			for(int i = 0, determine;!(x == 190 && y == 190);i++){
 				determine = rand.nextInt(14);
-				if(determine < 3 && determine >= 0 && x >= 10){
+				if(determine < 3 && x >= 10){
 					x-=5;
-				}else if(determine < 6 && determine >= 3 && y >= 10){
+				}else if(determine < 6 && y >= 10){
 					y-=5;
-				}else if(determine < 10 && determine >= 6 && x <= 185){
+				}else if(determine < 10 && x <= 185){
 					x+=5;
 				}else if(determine >= 10 && y<=185){
 					y+=5;
